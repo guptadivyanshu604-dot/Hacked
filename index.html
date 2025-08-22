@@ -54,13 +54,4 @@
     }
 
     function loop(){
-      const t = new Date().toLocaleTimeString();
-      const msg = lines[Math.floor(Math.random() * lines.length)];
-      addLine(`[${t}] ${msg}`);
-    }
-
-    // Infinite loop: हर 500ms में नया "hack log" add होता रहेगा
-    setInterval(loop, 500);
-  </script>
-</body>
-</html>
+      const t = new Date(
